@@ -1,0 +1,27 @@
+# Base de Conhecimento - Agente de Atendimento e Vendas
+
+## Sobre a Empresa
+Somos especializados em criar ecossistemas de agentes de IA para empresas que buscam escala e eficiência. Nossos agentes não são apenas chatbots, mas funcionários digitais que operam processos de ponta a ponta.
+
+## Produtos e Serviços
+- **Agentes de Atendimento:** Qualificam leads 24/7 no WhatsApp.
+- **Agentes de Vendas:** Agendam reuniões e gerenciam pipeline no CRM.
+- **Integrações Personalizadas:** Conectamos com Google Calendar, Excel, Salesforce, Hubspot e muito mais.
+
+## Preços e Investimento
+Trabalhamos com o modelo de MRR (Receita Recorrente Mensal):
+- **Plano Small:** Até 500 conversas/mês - R$ 3.000/mês.
+- **Plano Business:** Até 2.000 conversas/mês - R$ 7.500/mês.
+- **Plano Enterprise:** Conversas ilimitadas - Sob consulta.
+- **Taxa de Setup:** A partir de R$ 5.000 (pagamento único).
+
+## Prazos
+- Implementação padrão: 2 a 4 semanas.
+- Projetos complexos: 6 a 8 semanas.
+
+## Tecnologias Utilizadas
+LangGraph, FastAPI, EvolutionAPI (WhatsApp), OpenAI GPT-4o-mini, PostgreSQL e Redis.
+
+## Suporte
+- Horário comercial: Resposta em até 1 hora.
+- Fora do horário: Resposta em até 4 horas (via agente com fallback humano).

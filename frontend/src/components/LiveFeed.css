@@ -1,0 +1,114 @@
+.live-feed {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.live-feed__header {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-feed__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.live-feed__status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--success);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.live-feed__status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.live-feed__content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.live-feed__empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 2rem;
+  font-size: 0.875rem;
+}
+
+.live-feed__item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.live-feed__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.live-feed__item-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--primary-color);
+}
+
+.live-feed__item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.live-feed__item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.live-feed__item-type {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.live-feed__item-time {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.live-feed__item-payload {
+  font-size: 0.8125rem;
+  color: var(--text-primary);
+  word-break: break-all;
+  opacity: 0.9;
+}

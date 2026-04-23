@@ -1,0 +1,52 @@
+.sla-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.sla-indicator__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sla-indicator__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sla-indicator__time {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sla-indicator__label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Modifier levels */
+.sla-indicator--green { border-color: var(--success); }
+.sla-indicator--green .sla-indicator__time { color: var(--success); }
+.sla-indicator--green .sla-indicator__icon { color: var(--success); background: rgba(16, 185, 129, 0.1); }
+
+.sla-indicator--yellow { border-color: var(--warning); }
+.sla-indicator--yellow .sla-indicator__time { color: var(--warning); }
+.sla-indicator--yellow .sla-indicator__icon { color: var(--warning); background: rgba(245, 158, 11, 0.1); }
+
+.sla-indicator--red { border-color: var(--danger); }
+.sla-indicator--red .sla-indicator__time { color: var(--danger); }
+.sla-indicator--red .sla-indicator__icon { color: var(--danger); background: rgba(239, 68, 68, 0.1); }
+.sla-indicator--red { animation: pulse 2s infinite; }

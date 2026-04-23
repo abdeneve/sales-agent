@@ -1,0 +1,49 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+.uv/
+venv/
+env/
+
+# === uv ===
+uv.lock
+
+# === Pytest ===
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# === Ruff ===
+.ruff_cache/
+
+# === Secrets ===
+.env
+*.env
+!.env.example
+
+# === Node ===
+node_modules/
+dist/
+.next/
+
+# === IDEs ===
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# === Docker ===
+*.log
+
+# === Alembic ===
+backend/alembic/versions/*.pyc
